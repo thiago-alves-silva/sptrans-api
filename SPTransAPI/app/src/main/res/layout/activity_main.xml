@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/background"
+    android:padding="40dp"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:src="@drawable/sptrans"
+        android:layout_marginBottom="25dp" />
+    <EditText
+        android:id="@+id/txtParameterSearch"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="Insira o número ou nome do ônibus"
+        android:background="@drawable/input_text"
+        android:elevation="4dp"
+        android:layout_marginBottom="20dp" />
+    <Spinner
+        android:id="@+id/typeSearch"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@drawable/input_text"
+        android:elevation="4dp"/>
+    <RadioGroup
+        android:id="@+id/radioWay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="6dp"
+        android:gravity="center">
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:text="Term. Principal"
+            android:textSize="16dp" />
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="Term. Secundário"
+            android:textSize="16dp" />
+    </RadioGroup>
+    <Button
+        android:id="@+id/btnInitFetch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button"
+        android:elevation="5dp"
+        android:text="Procurar"
+        android:textColor="#fff"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:layout_marginTop="8dp"
+        android:onClick="resultScreen"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="bottom">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#fff"
+            android:textSize="30dp"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:text="Procure informações, rotas, posição atual e previsão de chegada dos ônibus!" />
+    </LinearLayout>
+</LinearLayout>
